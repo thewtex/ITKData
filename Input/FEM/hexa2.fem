@@ -56,6 +56,18 @@
 
 <END>	% End of nodes
 
+
+<MaterialStandard>
+	0	% Global material number
+	E: 3000000	% E
+	A: 0	% A
+	I: 0	% I
+	nu: 0.29	% nu
+	END:	% End of material definition
+
+<END>	% End of materials
+
+
 <HexahedronC03D>
 	0	% Global element number
 	0	% MaterialStandard ID
@@ -70,15 +82,6 @@
 
 <END>	% End of elements
 
-<MaterialStandard>
-	0	% Global material number
-	E: 3000000	% E
-	A: 0	% A
-	I: 0	% I
-	nu: 0.29	% nu
-	END:	% End of material definition
-
-<END>	% End of materials
 
 <LoadNode>
 	0	% Global load number
@@ -140,6 +143,4 @@
 	  23	% DOF# in element
 	1 0	% rhs of MFC
 
-
 <END>	% End of loads
-
