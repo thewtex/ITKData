@@ -35,6 +35,11 @@
 
 <END>	% End of elements
 
+<LoadLandmark>
+	-1
+	2 0. 0.
+	2 0. 1.
+	1.e-2
 <LoadBC>
 	0	% Global load number
 	  0	% GN of element
@@ -45,11 +50,6 @@
 	  0	% GN of element
 	  1	% DOF# in element
 	1 0	% rhs of MFC
-<LoadLandmark>
-	-1
-	2 0. 0.
-	2 0. 1.
-	1.e-2
 
 <END>	% End of loads
 
