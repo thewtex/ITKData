@@ -1,5 +1,6 @@
 .git*            export-ignore
 
+*.jpg           -crlf
 *.mha           -crlf
 *.png           -crlf
 *.raw           -crlf
