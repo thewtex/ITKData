@@ -1,0 +1,168 @@
+% "Example on Tetrahedral Element"
+%
+% http://www.me.unlv.edu/~mbt/443/tetrahedral/Example_on_Tetrahedral_Element.htm
+%
+% 5-node, 2-element example
+%
+% Displacements =>
+%
+% Node#: 0: 5.3491e-13,  2.30793e-13,  1.88973e-14   
+% Node#: 1: -1.21616e-12,  2.86612e-12,  0.0052   
+% Node#: 2: 6.08746e-13,  -1.01812e-13,  -5.35055e-14   
+% Node#: 3: 1.69514e-12,  -1.17905e-13,  3.57554e-14   
+% Node#: 4: -9.63041e-13,  2.67104e-12,  0.0052   
+%
+% Note: the smaller order solutions are zeros
+%
+<NodeXYZ>
+	0	% GNN
+	0	% X
+	0	% Y
+	0	% Z
+<NodeXYZ>
+	1	% GNN
+	0	% X
+	10	% Y
+	0	% Z
+<NodeXYZ>
+	2	% GNN
+	0	% X
+	0	% Y
+	10	% Z
+<NodeXYZ>
+	3	% GNN
+	-1	% X
+	0	% Y
+	0	% Z
+<NodeXYZ>
+	4	% GNN
+	-1	% X
+	10	% Y
+	0	% Z
+
+<END>	% End of nodes
+
+<MaterialStandard>
+	0	% Global material number
+	E: 3000000	% E
+	A: 0	% A
+	I: 0	% I
+	ni: 0.3	% ni
+	END:	% End of material definition
+
+<END>	% End of materials
+
+<TetrahedronC03D>
+	0	% Global element number
+	0	% MaterialStandard ID
+	0	% NodeXYZ 1 ID
+	1	% NodeXYZ 2 ID
+	2	% NodeXYZ 3 ID
+	4	% NodeXYZ 4 ID
+<TetrahedronC03D>
+	1	% Global element number
+	0	% MaterialStandard ID
+	0	% NodeXYZ 1 ID
+	2	% NodeXYZ 2 ID
+	3	% NodeXYZ 3 ID
+	4	% NodeXYZ 4 ID
+
+<END>	% End of elements
+
+<LoadNode>
+	0	% Global load number
+	0	% GN of element on which the load acts
+	1	% Point number within the element
+	3 0 0 -1000	% Force vector
+<LoadNode>
+	1	% Global load number
+	1	% GN of element on which the load acts
+	3	% Point number within the element
+	3 0 0 -1000	% Force vector
+
+% Essential boundary conditions in form of MFCs are applyed, so that the system is
+% fixed and we can solve for displacements. 
+<LoadBCMFC>
+	2	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  0	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	3	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  1	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	4	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  2	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	5	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  6	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	6	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  7	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	7	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  8	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	8	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  1	% GN of element
+	  6	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	9	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  1	% GN of element
+	  7	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	10	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  1	% GN of element
+	  8	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+
+<END>	% End of loads
+
