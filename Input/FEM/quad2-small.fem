@@ -1,0 +1,92 @@
+% Example from Grandin, "Fundamentals of the Finite Element Method", pp. 249-55
+
+% Single 4-noded element, fixed at nodes 1 and 4, forces applied at
+% nodes 2 and 3
+
+<NodeXY>
+	0	% Global node number
+	1	% X
+	2	% Y
+<NodeXY>
+	1	% Global node number
+	4	% X
+	3	% Y
+<NodeXY>
+	2	% Global node number
+	4	% X
+	5	% Y
+<NodeXY>
+	3	% Global node number
+	1	% X
+	4	% Y
+
+<END>	% End of nodes
+
+<MaterialStandard>
+	0	% Global material number
+	E  : 30000000	% Young modulus
+	A  : 0	% Crossection area
+	I  : 0	% Moment of inertia
+	ni : 0.3	% Poisson's ratio
+	END:	% End of material definition
+
+<END>	% End of materials
+
+<QuadC02D>
+	0	% Global element number
+	0	% MaterialStandard ID
+	0	% NodeXY 1 ID
+	1	% NodeXY 2 ID
+	2	% NodeXY 3 ID
+	3	% NodeXY 4 ID
+
+<END>	% End of elements
+
+<LoadNode>
+	0	% Global load number
+	0	% GN of element on which the load acts
+	1
+	2 5 0	% Force vector (first number is the size of a vector)
+<LoadNode>
+	1	% Global load number
+	0	% GN of element on which the load acts
+	2
+	2 10 0	% Force vector (first number is the size of a vector)
+<LoadBCMFC>
+	2	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  0	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	3	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  1	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	4	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  6	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+<LoadBCMFC>
+	5	% Global load number
+	1	% Number of DOFs in this MFC
+	  %==>
+	  0	% GN of element
+	  7	% DOF# in element
+	  1	% weight
+	  %==>
+	1 0	% rhs of MFC
+
+<END>	% End of loads
