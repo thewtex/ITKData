@@ -1,7 +1,13 @@
-17
+23
+3dscope.fem
+3dscope-big.fem
+cell4.fem
+cell5.fem
+cell10.fem
 hexa2.fem
 hexa3.fem
 hexa4-grav.fem
+jello3d.fem
 quad2-small.fem
 quad3-nodal.fem
 quad3.fem
