@@ -1,0 +1,34 @@
+
+<NodeXY>
+	0	% Global node number
+	0	% X
+	0	% Y
+<NodeXY>
+	1	% Global node number
+	1	% X
+	0	% Y
+<NodeXY>
+	2	% Global node number
+	1	% X
+	1	% Y
+<END>	% End of nodes
+
+<MaterialStandard>
+	0	% Global material number
+	E  : 30000000	% Young modulus
+	A  : 0	% Crossection area
+	I  : 0	% Moment of inertia
+	ni : 0.3	% Poisson's ratio
+	END:	% End of material definition
+
+<END>	% End of materials
+
+<TriC02D>
+	0	% Global element number
+	0	% MaterialStandard ID
+	0	% NodeXY 1 ID
+	1	% NodeXY 2 ID
+	2	% NodeXY 3 ID
+<END>	% End of elements
+
+<END>	% End of loads
