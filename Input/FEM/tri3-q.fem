@@ -5,14 +5,12 @@
 <Node>
 	1
 	2 1 0
-
 <Node>
 	2	% Global node number
 	2 2 0	% Nodal coordinates
 <Node>
 	3
 	2 2 1
-
 <Node>
 	4	% Global node number
 	2 2 2	% Nodal coordinates
