@@ -4,68 +4,51 @@
 %
 % 5-node, 2-element example
 %
-% Displacements =>
 %
-% Node#: 0: 5.3491e-13,  2.30793e-13,  1.88973e-14   
-% Node#: 1: -1.21616e-12,  2.86612e-12,  0.0052   
-% Node#: 2: 6.08746e-13,  -1.01812e-13,  -5.35055e-14   
-% Node#: 3: 1.69514e-12,  -1.17905e-13,  3.57554e-14   
-% Node#: 4: -9.63041e-13,  2.67104e-12,  0.0052   
-%
-% Note: the smaller order solutions are zeros
-%
-<NodeXYZ>
+<Node>
 	0	% GNN
-	0	% X
-	0	% Y
-	0	% Z
-<NodeXYZ>
+	3 0 0 0	% Nodal coordinates
+<Node>
 	1	% GNN
-	0	% X
-	10	% Y
-	0	% Z
-<NodeXYZ>
+	3 0 10 0	% Nodal coordinates
+<Node>
 	2	% GNN
-	0	% X
-	0	% Y
-	10	% Z
-<NodeXYZ>
+	3 0 0 10	% Nodal coordinates
+<Node>
 	3	% GNN
-	-1	% X
-	0	% Y
-	0	% Z
-<NodeXYZ>
+	3 -1 0 0	% Nodal coordinates
+<Node>
 	4	% GNN
-	-1	% X
-	10	% Y
-	0	% Z
+	3 -1 10	0	% Nodal coordinates
 
 <END>	% End of nodes
 
-<MaterialStandard>
+<MaterialLinearElasticity>
 	0	% Global material number
 	E: 3000000	% E
 	A: 0	% A
 	I: 0	% I
 	nu: 0.3	% nu
+	h: 1
+	RhoC: 1
 	END:	% End of material definition
 
 <END>	% End of materials
 
-<TetrahedronC03D>
+<Element3DC0LinearTetrahedronStrain>
 	0	% Global element number
-	0	% MaterialStandard ID
-	0	% NodeXYZ 1 ID
-	1	% NodeXYZ 2 ID
-	4	% NodeXYZ 3 ID
-	2	% NodeXYZ 4 ID
-<TetrahedronC03D>
+	0	% Node 1 ID
+	1	% Node 2 ID
+	4	% Node 3 ID
+	2	% Node 4 ID
+	0	% Material ID
+<Element3DC0LinearTetrahedronStrain>
 	1	% Global element number
-	0	% MaterialStandard ID
-	0	% NodeXYZ 1 ID
-	4	% NodeXYZ 2 ID
-	3	% NodeXYZ 3 ID
-	2	% NodeXYZ 4 ID
+	0	% Node 1 ID
+	4	% Node 2 ID
+	3	% Node 3 ID
+	2	% Node 4 ID
+	0	% Material ID
 
 <END>	% End of elements
 
@@ -76,8 +59,8 @@
 	3 0 0 -1000	% Force vector
 <LoadNode>
 	1	% Global load number
-	1	% GN of element on which the load acts
-	3	% Point number within the element
+	0	% GN of element on which the load acts
+	2	% Point number within the element
 	3 0 0 -1000	% Force vector
 
 % Essential boundary conditions in form of MFCs are applyed, so that the system is
@@ -100,17 +83,17 @@
 <LoadBC>
 	5	% Global load number
 	  0	% GN of element
-	  6	% DOF# in element
+	  9	% DOF# in element
 	1 0	% rhs of MFC
 <LoadBC>
 	6	% Global load number
 	  0	% GN of element
-	  7	% DOF# in element
+	  10	% DOF# in element
 	1 0	% rhs of MFC
 <LoadBC>
 	7	% Global load number
 	  0	% GN of element
-	  8	% DOF# in element
+	  11	% DOF# in element
 	1 0	% rhs of MFC
 <LoadBC>
 	8	% Global load number

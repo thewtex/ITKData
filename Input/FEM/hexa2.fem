@@ -14,29 +14,29 @@
 % Note: the smaller order solutions are zeros
 %
 <Node>
-	0	% GNN
-	0 0 0	% Nodal coordinates
+	0	% Global object number
+	3 0 0 0	% Nodal coordinates
 <Node>
-	1	% GNN
-	0 0 1   % Nodal coordinates
+	1	% Global object number
+	3 0 0 1	% Nodal coordinates
 <Node>
-	2	% GNN
-	1 0 1	% Nodal coordinates
+	2	% Global object number
+	3 1 0 1	% Nodal coordinates
 <Node>
-	3	% GNN
-	1 0 0	% Nodal coordinates
+	3	% Global object number
+	3 1 0 0	% Nodal coordinates
 <Node>
-	4	% GNN
-	0 1 0	% Nodal coordinates
+	4	% Global object number
+	3 0 1 0	% Nodal coordinates
 <Node>
-	5	% GNN
-	0 1 1	% Nodal coordinates
+	5	% Global object number
+	3 0 1 1	% Nodal coordinates
 <Node>
-	6	% GNN
-	1 1 1	% Nodal coordinates
+	6	% Global object number
+	3 1 1 1	% Nodal coordinates
 <Node>
-	7	% GNN
-	1 1 0	% Nodal coordinates
+	7	% Global object number
+	3 1 1 0	% Nodal coordinates
 
 <END>	% End of nodes
 
@@ -56,7 +56,6 @@
 
 <Element3DC0LinearHexahedronStrain>
 	0	% Global object number
-	0	% Material ID
 	0	% Node 1 ID
 	1	% Node 2 ID
 	2	% Node 3 ID
@@ -65,6 +64,7 @@
 	5	% Node 6 ID
 	6	% Node 7 ID
 	7	% Node 8 ID
+	0	% Material ID
 
 <END>	% End of elements
 

@@ -1,43 +1,37 @@
-<NodeXYZ>
+<Node>
 	0	% GNN
-	0	% X
-	0	% Y
-	0	% Z
-<NodeXYZ>
+	3 0 0 0	% Nodal coordinates
+<Node>
 	1	% GNN
-	1	% X
-	0	% Y
-	0	% Z
-<NodeXYZ>
+	3 1 0 0	% Nodal coordinates
+<Node>
 	2	% GNN
-	0	% X
-	1	% Y
-	0	% Z
-<NodeXYZ>
+	3 0 1 0	% Nodal coordinates
+<Node>
 	3	% GNN
-	0	% X
-	0	% Y
-	1	% Z
+	3 0 0 1	% Nodal coordinates
 
 <END>	% End of nodes
 
-<MaterialStandard>
+<MaterialLinearElasticity>
 	0	% Global material number
 	E: 3000000	% E
 	A: 0	% A
 	I: 0	% I
 	nu: 0.3	% nu
+	h: 1
+	RhoC: 1
 	END:	% End of material definition
 
 <END>	% End of materials
 
-<TetrahedronC03D>
+<Element3DC0LinearTetrahedronStrain>
 	0	% Global element number
-	0	% MaterialStandard ID
-	0	% NodeXYZ 1 ID
-	1	% NodeXYZ 2 ID
-	2	% NodeXYZ 3 ID
-	3	% NodeXYZ 4 ID
+	0	% Node 1 ID
+	1	% Node 2 ID
+	2	% Node 3 ID
+	3	% Node 4 ID
+	0	% Material ID
 
 <END>	% End of elements
 

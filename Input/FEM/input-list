@@ -1,4 +1,4 @@
-16
+15
 hexa2.fem
 hexa3.fem
 hexa4-grav.fem
@@ -14,4 +14,3 @@ trapezoid.fem
 tri2.fem
 tri3.fem
 truss.fem
-truss_noload.fem
