@@ -13,72 +13,58 @@
 %
 % Note: the smaller order solutions are zeros
 %
-<NodeXYZ>
+<Node>
 	0	% GNN
-	0	% X
-	0	% Y
-	0	% Z
-<NodeXYZ>
+	0 0 0	% Nodal coordinates
+<Node>
 	1	% GNN
-	0	% X
-	0	% Y
-	1	% Z
-<NodeXYZ>
+	0 0 1   % Nodal coordinates
+<Node>
 	2	% GNN
-	1	% X
-	0	% Y
-	1	% Z
-<NodeXYZ>
+	1 0 1	% Nodal coordinates
+<Node>
 	3	% GNN
-	1	% X
-	0	% Y
-	0	% Z
-<NodeXYZ>
+	1 0 0	% Nodal coordinates
+<Node>
 	4	% GNN
-	0	% X
-	1	% Y
-	0	% Z
-<NodeXYZ>
+	0 1 0	% Nodal coordinates
+<Node>
 	5	% GNN
-	0	% X
-	1	% Y
-	1	% Z
-<NodeXYZ>
+	0 1 1	% Nodal coordinates
+<Node>
 	6	% GNN
-	1	% X
-	1	% Y
-	1	% Z
-<NodeXYZ>
+	1 1 1	% Nodal coordinates
+<Node>
 	7	% GNN
-	1	% X
-	1	% Y
-	0	% Z
+	1 1 0	% Nodal coordinates
 
 <END>	% End of nodes
 
 
-<MaterialStandard>
+<MaterialLinearElasticity>
 	0	% Global material number
 	E: 3000000	% E
 	A: 0	% A
 	I: 0	% I
 	nu: 0.29	% nu
+	h: 1
+	RhoC: 1
 	END:	% End of material definition
 
 <END>	% End of materials
 
 
-<HexahedronC03D>
-	0	% Global element number
-	0	% MaterialStandard ID
-	0	% NodeXYZ 1 ID
-	1	% NodeXYZ 2 ID
-	2	% NodeXYZ 3 ID
-	3	% NodeXYZ 4 ID
-	4	% NodeXYZ 5 ID
-	5	% NodeXYZ 6 ID
-	6	% NodeXYZ 7 ID
-	7	% NodeXYZ 8 ID
+<Element3DC0LinearHexahedronStrain>
+	0	% Global object number
+	0	% Material ID
+	0	% Node 1 ID
+	1	% Node 2 ID
+	2	% Node 3 ID
+	3	% Node 4 ID
+	4	% Node 5 ID
+	5	% Node 6 ID
+	6	% Node 7 ID
+	7	% Node 8 ID
 
 <END>	% End of elements
 
