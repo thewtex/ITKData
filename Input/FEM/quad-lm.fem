@@ -1,16 +1,15 @@
-
 <Node>
 	0	% Global node number
-	2 0 0   % Nodal coordinates
+	2 0 0	% Nodal coordinates
 <Node>
 	1	% Global node number
-	2 1 1   % Nodal coordinates
+	2 1 0	% Nodal coordinates
 <Node>
 	2	% Global node number
-	2 3 2   % Nodal coordinates
+	2 3 2	% Nodal coordinates
 <Node>
 	3	% Global node number
-	2 0 3   % Nodal coordinates
+	2 0 3	% Nodal coordinates
 
 <END>	% End of nodes
 
@@ -47,9 +46,12 @@
 	  1	% DOF# in element
 	1 0	% rhs of MFC
 <LoadLandmark>
-	2
+	-1
 	2 0. 0.
 	2 0. 1.
 	1.e-2
 
 <END>	% End of loads
+
+
+
