@@ -29,7 +29,7 @@
 	E  : 4206384	% Young modulus
 	A  : 0	% Crossection area
 	I  : 0	% Moment of inertia
-	ni : 0.3333333333	% Poisson's ratio
+	nu : 0.3333333333	% Poisson's ratio
 	END:	% End of material definition
 
 <END>	% End of materials

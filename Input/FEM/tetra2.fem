@@ -47,7 +47,7 @@
 	E: 3000000	% E
 	A: 0	% A
 	I: 0	% I
-	ni: 0.3	% ni
+	nu: 0.3	% nu
 	END:	% End of material definition
 
 <END>	% End of materials
