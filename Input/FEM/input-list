@@ -1,4 +1,4 @@
-16
+17
 hexa2.fem
 hexa3.fem
 hexa4-grav.fem
@@ -11,6 +11,7 @@ quad6-grav.fem
 quad_1_edge.fem
 tetra2.fem
 tetra3.fem
+tetra4-grav.fem
 trapezoid.fem
 tri2.fem
 tri3.fem
