@@ -104,68 +104,40 @@
 % Essential boundary conditions in form of MFCs are applyed, so that
 % the system is fixed and we can solve for displacements. In book the
 % MFCs are different than these here.
-<LoadBCMFC>
+<LoadBC>
 	4	% Global load number
-	1	% Number of DOFs in this MFC
-	  %==>
 	  0	% GN of element
 	  12	% DOF# in element
-	  1	% weight
-	  %==>
 	1 0	% rhs of MFC
-<LoadBCMFC>
+<LoadBC>
 	5	% Global load number
-	1	% Number of DOFs in this MFC
-	  %==>
 	  0	% GN of element
 	  13	% DOF# in element
-	  1	% weight
-	  %==>
 	1 0	% rhs of MFC
-<LoadBCMFC>
+<LoadBC>
 	6	% Global load number
-	1	% Number of DOFs in this MFC
-	  %==>
 	  0	% GN of element
 	  15	% DOF# in element
-	  1	% weight
-	  %==>
 	1 0	% rhs of MFC
-<LoadBCMFC>
+<LoadBC>
 	7	% Global load number
-	1	% Number of DOFs in this MFC
-	  %==>
 	  0	% GN of element
 	  16	% DOF# in element
-	  1	% weight
-	  %==>
 	1 0	% rhs of MFC
-<LoadBCMFC>
+<LoadBC>
 	8	% Global load number
-	1	% Number of DOFs in this MFC
-	  %==>
 	  0	% GN of element
 	  19	% DOF# in element
-	  1	% weight
-	  %==>
 	1 0	% rhs of MFC
-<LoadBCMFC>
+<LoadBC>
 	9	% Global load number
-	1	% Number of DOFs in this MFC
-	  %==>
 	  0	% GN of element
 	  22	% DOF# in element
-	  1	% weight
-	  %==>
 	1 0	% rhs of MFC
-<LoadBCMFC>
+<LoadBC>
 	10	% Global load number
-	1	% Number of DOFs in this MFC
-	  %==>
 	  0	% GN of element 
 	  23	% DOF# in element
-	  1	% weight
-	  %==>
 	1 0	% rhs of MFC
 
 

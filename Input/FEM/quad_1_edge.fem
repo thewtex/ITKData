@@ -44,23 +44,15 @@
 
 <END>	% End of elements
 
-<LoadBCMFC>
+<LoadBC>
 	-1	% Global object number
-	1	% Number of DOFs in this MFC
-	  %==>
 	  0	% GN of element
 	  0	% DOF# in element
-	  1	% weight
-	  %==>
 	1 0	% rhs of MFC
-<LoadBCMFC>
+<LoadBC>
 	-1	% Global object number
-	1	% Number of DOFs in this MFC
-	  %==>
 	  0	% GN of element
 	  1	% DOF# in element
-	  1	% weight
-	  %==>
 	1 0	% rhs of MFC
 <LoadEdge>
 	-1	% Global object number
