@@ -50,5 +50,15 @@
 	  0	% GN of element
 	  1	% DOF# in element
 	1 0	% rhs of MFC
+<LoadBC>
+	2	% Global load number
+	  0	% GN of element
+	  2	% DOF# in element
+	1 0	% rhs of MFC
+<LoadBC>
+	3	% Global load number
+	  0	% GN of element
+	  3	% DOF# in element
+	1 0	% rhs of MFC
 
 <END>	% End of loads
