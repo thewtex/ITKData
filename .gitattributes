@@ -4,3 +4,4 @@
 *.mha           -crlf
 *.png           -crlf
 *.raw           -crlf
+*.tif           -crlf
