@@ -3,11 +3,22 @@
 	0	% Global node number
 	2 0 0	% Nodal coordinates
 <Node>
-	1	% Global node number
-	2 1 0	% Nodal coordinates
+	1
+	2 1 0
+
 <Node>
 	2	% Global node number
-	2 1 1	% Nodal coordinates
+	2 2 0	% Nodal coordinates
+<Node>
+	3
+	2 2 1
+
+<Node>
+	4	% Global node number
+	2 2 2	% Nodal coordinates
+<Node>
+	5
+	2 1 1
 <END>	% End of nodes
 
 <MaterialLinearElasticity>
