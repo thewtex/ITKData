@@ -1,0 +1,5 @@
+numDim: 4
+dim: 24 24 1 0
+origin: 0 0 0 0
+dataType: WORD
+stimFileName: BigEndian.img
