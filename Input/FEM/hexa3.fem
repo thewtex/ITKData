@@ -1,0 +1,69 @@
+<NodeXYZ>
+	0	% GNN
+	0	% X
+	0	% Y
+	0	% Z
+<NodeXYZ>
+	1	% GNN
+	0	% X
+	0	% Y
+	1	% Z
+<NodeXYZ>
+	2	% GNN
+	1	% X
+	0	% Y
+	1	% Z
+<NodeXYZ>
+	3	% GNN
+	1	% X
+	0	% Y
+	0	% Z
+<NodeXYZ>
+	4	% GNN
+	0	% X
+	1	% Y
+	0	% Z
+<NodeXYZ>
+	5	% GNN
+	0	% X
+	1	% Y
+	1	% Z
+<NodeXYZ>
+	6	% GNN
+	1	% X
+	1	% Y
+	1	% Z
+<NodeXYZ>
+	7	% GNN
+	1	% X
+	1	% Y
+	0	% Z
+
+<END>	% End of nodes
+
+<MaterialStandard>
+	0	% Global material number
+	E: 3000000	% E
+	A: 0	% A
+	I: 0	% I
+	ni: 0.29	% ni
+	END:	% End of material definition
+
+<END>	% End of materials
+
+<HexahedronC03D>
+	0	% Global element number
+	0	% MaterialStandard ID
+	0	% NodeXYZ 1 ID
+	1	% NodeXYZ 2 ID
+	2	% NodeXYZ 3 ID
+	3	% NodeXYZ 4 ID
+	4	% NodeXYZ 5 ID
+	5	% NodeXYZ 6 ID
+	6	% NodeXYZ 7 ID
+	7	% NodeXYZ 8 ID
+
+<END>	% End of elements
+
+<END>	% End of loads
+
