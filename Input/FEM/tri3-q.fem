@@ -1,3 +1,9 @@
+% NOTE: in this element, you have to list the "corner" nodes first and then
+%       list the edge nodes.  Note that nodes 0,1,2 below form the triangle
+%       and nodes 3,4,5 lie along the edges formed by 0,1,2.  If you list
+%       the nodes continuously, Itpack will complain that you have negative
+%       values along the diagonal of K.
+
 <Node>
 	0	% Global node number
 	2 0 0	% Nodal coordinates
