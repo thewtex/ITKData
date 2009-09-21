@@ -1,5 +1,5 @@
 # vtk DataFile Version 3.0
-vtk output
+Failed to read 2610 polygons before the end of file. Only read 3
 ASCII
 DATASET POLYDATA
 POINTS 1307 float
